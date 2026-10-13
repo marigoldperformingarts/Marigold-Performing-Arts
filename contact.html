@@ -20,83 +20,113 @@
 
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="classes.html">Classes</a>
-            <a href="faculty.html">Faculty</a>
-            <a href="performances.html">Performances</a>
+            <a href="about.html">About Us</a>
+            <a href="performances.html">Performances &amp; Events</a>
             <a href="contact.html">Contact</a>
+            <span class="portal-coming-soon">Student Portal <small>Coming Soon</small></span>
         </nav>
-
-        <a href="contact.html" class="nav-button">Join a Class</a>
 
     </header>
 
 
-    <main>
+    <main class="contact-page">
 
-        <section class="page-hero">
-
-            <p class="section-label">GET IN TOUCH</p>
-
-            <h1>Contact</h1>
-
+        <section class="contact-page-intro" aria-labelledby="contact-title">
+            <p class="section-label">MARIGOLD PERFORMING ARTS</p>
+            <h1 id="contact-title">Get in Touch</h1>
             <p>
-                Classes, performances, workshops, and collaborations.
+                Interested in Kathak or Tabla classes, performances,
+                workshops, or collaborations? We'd love to hear from you.
             </p>
-
         </section>
 
+        <section class="contact-layout" aria-label="Contact information and inquiry form">
 
-        <section class="content-section">
+            <div class="contact-details">
+                <p class="section-label">CONTACT INFORMATION</p>
+                <h2>Start a Conversation</h2>
 
-            <p class="section-label">CONNECT WITH MARIGOLD</p>
-
-            <h2>We'd Love to Hear From You</h2>
-
-            <div class="contact-grid">
-
-                <div class="contact-option">
-                    <h3>Classes</h3>
-                    <p>
-                        Interested in Kathak or Tabla training?
-                        Get in touch to learn about current batches,
-                        levels, locations, and enrollment.
-                    </p>
-                </div>
-
-                <div class="contact-option">
-                    <h3>Performances</h3>
-                    <p>
-                        Contact us about performances, cultural
-                        programs, demonstrations, and artistic events.
-                    </p>
-                </div>
-
-                <div class="contact-option">
-                    <h3>Workshops & Collaborations</h3>
-                    <p>
-                        Connect with Marigold for workshops,
-                        educational programs, and creative collaborations.
-                    </p>
-                </div>
-
+                <dl class="contact-detail-list">
+                    <div>
+                        <dt>Email</dt>
+                        <dd>
+                            <a href="mailto:marigoldperformingarts@gmail.com">
+                                marigoldperformingarts@gmail.com
+                            </a>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Instagram</dt>
+                        <dd>
+                            <a href="https://www.instagram.com/REPLACE_WITH_INSTAGRAM_HANDLE">
+                                Instagram profile <span>(replace with official link)</span>
+                            </a>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Facebook</dt>
+                        <dd>
+                            <a href="https://www.facebook.com/REPLACE_WITH_FACEBOOK_PAGE">
+                                Facebook page <span>(replace with official link)</span>
+                            </a>
+                        </dd>
+                    </div>
+                </dl>
             </div>
 
-        </section>
+            <div class="contact-form-column">
+                <p class="section-label">SEND AN INQUIRY</p>
 
+                <form
+                    class="inquiry-form"
+                    action="https://formspree.io/f/mppqyolg"
+                    method="POST">
 
-        <section class="contact-section">
+                    <div class="form-field">
+                        <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                        <input
+                            id="full-name"
+                            name="name"
+                            type="text"
+                            autocomplete="name"
+                            required>
+                    </div>
 
-            <p class="section-label">CONTACT INFORMATION</p>
+                    <div class="form-field">
+                        <label for="email-address">Email Address <span aria-hidden="true">*</span></label>
+                        <input
+                            id="email-address"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required>
+                    </div>
 
-            <h2>Let's Connect</h2>
+                    <div class="form-field">
+                        <label for="inquiry-type">Inquiry Type</label>
+                        <select id="inquiry-type" name="inquiry_type" required>
+                            <option value="" selected disabled>Select an inquiry type</option>
+                            <option value="Kathak Classes">Kathak Classes</option>
+                            <option value="Tabla Classes">Tabla Classes</option>
+                            <option value="Performances & Workshops">Performances &amp; Workshops</option>
+                            <option value="Other Inquiry">Other Inquiry</option>
+                        </select>
+                    </div>
 
-            <p>
-                Email, phone numbers, social media, and inquiry form
-                will be added here.
-            </p>
+                    <div class="form-field">
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required></textarea>
+                    </div>
 
-            <!-- Final contact information to be added -->
+                    <button class="form-submit" type="submit">
+                        Send Message
+                    </button>
+                </form>
+            </div>
 
         </section>
 

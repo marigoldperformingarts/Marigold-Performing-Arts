@@ -678,3 +678,446 @@ footer p {
     }
 
 }
+/* ---------- ABOUT PAGE: LEADERSHIP ---------- */
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.leadership-card {
+    padding: 35px;
+    border-top: 1px solid #a87723;
+}
+
+.leadership-card h3 {
+    color: #e4b450;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.leadership-card p {
+    color: #a99d83;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- SIMPLIFIED NAVIGATION ---------- */
+
+.nav-links {
+    align-items: center;
+    gap: clamp(14px, 2.4vw, 30px);
+}
+
+.portal-coming-soon {
+    color: #9f8b60;
+    cursor: default;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.portal-coming-soon small {
+    display: block;
+    margin-top: 4px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+
+/* ---------- HOMEPAGE ---------- */
+
+.home-section,
+.home-contact {
+    padding: 72px 10%;
+}
+
+.home-section .section-label {
+    margin-bottom: 14px;
+}
+
+.home-section h2 {
+    margin-bottom: 20px;
+}
+
+.home-offerings .discipline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.home-offerings .discipline-card {
+    min-height: 0;
+    padding: 26px;
+    justify-content: flex-start;
+    border: 1px solid rgba(199, 143, 34, 0.3);
+}
+
+.home-offerings .discipline-card h3 {
+    margin-bottom: 8px;
+}
+
+.home-level-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.home-level-grid .class-card {
+    min-height: 0;
+    padding: 22px;
+    justify-content: flex-start;
+}
+
+.home-level-grid .class-card h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.home-subsection {
+    margin-top: 36px;
+}
+
+.home-subsection > h3 {
+    color: #e4b450;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.home-location-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.home-location-grid .location-card {
+    padding: 16px 12px;
+}
+
+.home-location-grid .location-card h3 {
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+.home-location-grid .location-card p {
+    font-size: 11px;
+}
+
+.home-events > p:not(.section-label) {
+    max-width: 760px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+    .home-section,
+    .home-contact {
+        padding: 52px 7%;
+    }
+
+    .home-offerings .discipline-grid,
+    .home-location-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .home-level-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .home-offerings .discipline-grid,
+    .home-level-grid,
+    .home-location-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- ABOUT PAGE SPACING ---------- */
+
+.about-page .page-hero {
+    min-height: 220px;
+    justify-content: flex-start;
+    padding: 42px 10% 22px;
+}
+
+.about-page .page-hero h1 {
+    font-size: clamp(54px, 6vw, 82px);
+    margin-bottom: 10px;
+}
+
+.about-page .page-hero > p:last-child {
+    font-size: 20px;
+}
+
+.about-page .section-label {
+    margin-bottom: 8px;
+}
+
+.about-page .content-section {
+    padding: 28px 10%;
+}
+
+.about-page .content-section h2 {
+    font-size: clamp(36px, 4vw, 58px);
+    margin-bottom: 10px;
+}
+
+.about-page .content-section > p:not(.section-label) {
+    font-size: 19px;
+    line-height: 1.45;
+}
+
+.about-page .content-section > p:not(.section-label) + p {
+    margin-top: 10px;
+}
+
+.about-page .leadership-grid {
+    margin-top: 18px;
+}
+
+.about-page .leadership-card {
+    padding: 20px;
+}
+
+.about-page .leadership-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 38%;
+    margin-bottom: 14px;
+}
+
+.about-page .leadership-card h3 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.about-page .leadership-card p {
+    line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+    .about-page .page-hero {
+        min-height: 180px;
+        padding: 34px 7% 18px;
+    }
+
+    .about-page .content-section {
+        padding: 24px 7%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .about-page .leadership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+/* ---------- CONTACT PAGE ---------- */
+
+.contact-page {
+    background: #0b0906;
+}
+
+.contact-page-intro {
+    padding: 62px 10% 34px;
+    border-bottom: 1px solid rgba(199, 143, 34, 0.2);
+    background:
+        radial-gradient(
+            circle at 78% 45%,
+            rgba(148, 75, 18, 0.14),
+            transparent 34%
+        ),
+        #050505;
+}
+
+.contact-page-intro .section-label {
+    margin-bottom: 14px;
+}
+
+.contact-page-intro h1 {
+    color: #efc668;
+    font-size: clamp(54px, 6vw, 82px);
+    line-height: 0.95;
+    margin-bottom: 16px;
+}
+
+.contact-page-intro > p:last-child {
+    max-width: 720px;
+    color: #c5b896;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 64px;
+    padding: 50px 10% 88px;
+}
+
+.contact-details {
+    padding-right: 48px;
+    border-right: 1px solid rgba(199, 143, 34, 0.3);
+}
+
+.contact-details .section-label,
+.contact-form-column > .section-label {
+    margin-bottom: 14px;
+}
+
+.contact-details h2 {
+    color: #e8bd5c;
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1;
+    margin-bottom: 26px;
+}
+
+.contact-detail-list {
+    margin: 0;
+}
+
+.contact-detail-list > div {
+    padding: 17px 0;
+    border-top: 1px solid rgba(199, 143, 34, 0.25);
+}
+
+.contact-detail-list dt {
+    color: #d69b28;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.contact-detail-list dd,
+.contact-detail-list a {
+    color: #d4c29d;
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.contact-detail-list a {
+    text-decoration-color: rgba(214, 155, 40, 0.5);
+    text-underline-offset: 4px;
+}
+
+.contact-detail-list a:hover {
+    color: #efc668;
+}
+
+.contact-detail-list a span {
+    display: block;
+    color: #9b8c6e;
+    font-size: 11px;
+}
+
+.inquiry-form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-field {
+    display: grid;
+    gap: 8px;
+}
+
+.form-field label {
+    color: #d8c69f;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.form-field label span {
+    color: #d69b28;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 14px;
+    border: 1px solid rgba(199, 143, 34, 0.4);
+    border-radius: 0;
+    background: #080706;
+    color: #e8d5aa;
+    font: 400 14px 'Montserrat', sans-serif;
+}
+
+.form-field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-field select:invalid {
+    color: #9b8c6e;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid #c9932d;
+    outline-offset: 2px;
+}
+
+.form-inactive-note {
+    color: #b8aa89;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.form-submit {
+    justify-self: start;
+    min-height: 46px;
+    padding: 13px 24px;
+    border: 1px solid #85641f;
+    background: #6e501c;
+    color: #191207;
+    font: 500 11px 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: not-allowed;
+}
+
+.form-submit:disabled {
+    opacity: 0.65;
+}
+
+@media (max-width: 900px) {
+    .contact-page-intro {
+        padding: 48px 7% 28px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 38px 7% 64px;
+    }
+
+    .contact-details {
+        padding-right: 0;
+        padding-bottom: 28px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(199, 143, 34, 0.3);
+    }
+}
