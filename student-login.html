@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <title>Student Portal | Marigold Performing Arts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portal-page" data-portal-page="login">
+    <header class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="images/marigold-logo.png" alt="Marigold Performing Arts" class="nav-logo">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="performances.html">Performances &amp; Events</a>
+            <a href="contact.html">Contact</a>
+            <span class="portal-current" aria-current="page">Student Portal</span>
+        </nav>
+    </header>
+
+    <main class="portal-main">
+        <section class="portal-card" id="login-panel" aria-labelledby="login-title">
+            <p class="section-label">STUDENT ACCESS</p>
+            <h1 id="login-title">Student Portal</h1>
+            <p class="portal-intro">Sign in with the email and password provided for your student account.</p>
+
+            <p class="portal-message" id="login-message" role="status" aria-live="polite"></p>
+
+            <form class="portal-form" id="login-form">
+                <div class="portal-field">
+                    <label for="login-email">Email Address</label>
+                    <input id="login-email" name="email" type="email" autocomplete="username" required>
+                </div>
+                <div class="portal-field">
+                    <label for="login-password">Password</label>
+                    <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+                </div>
+                <button class="primary-button portal-submit" id="login-submit" type="submit">Sign In</button>
+            </form>
+
+            <button class="portal-text-button" id="forgot-password" type="button">Forgot password?</button>
+        </section>
+
+        <section class="portal-card" id="recovery-panel" aria-labelledby="recovery-title" hidden>
+            <p class="section-label">ACCOUNT RECOVERY</p>
+            <h1 id="recovery-title">Set a New Password</h1>
+            <p class="portal-intro">Choose a new password for your student account.</p>
+            <p class="portal-message" id="recovery-message" role="status" aria-live="polite"></p>
+
+            <form class="portal-form" id="recovery-form">
+                <div class="portal-field">
+                    <label for="new-password">New Password</label>
+                    <input id="new-password" name="new_password" type="password" autocomplete="new-password" minlength="12" required>
+                </div>
+                <div class="portal-field">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input id="confirm-password" name="confirm_password" type="password" autocomplete="new-password" minlength="12" required>
+                </div>
+                <button class="primary-button portal-submit" id="recovery-submit" type="submit">Update Password</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="portal-footer">
+        <p>© 2026 Marigold Performing Arts LLC</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="student-portal.js"></script>
+</body>
+</html>

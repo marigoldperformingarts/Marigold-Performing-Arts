@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <title>Student Dashboard | Marigold Performing Arts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portal-page" data-portal-page="dashboard">
+    <header class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="images/marigold-logo.png" alt="Marigold Performing Arts" class="nav-logo">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="performances.html">Performances &amp; Events</a>
+            <a href="contact.html">Contact</a>
+            <span class="portal-current" aria-current="page">Student Portal</span>
+        </nav>
+    </header>
+
+    <main class="portal-main" id="dashboard-content" hidden>
+        <section class="portal-card" aria-labelledby="dashboard-title">
+            <p class="section-label">STUDENT PORTAL</p>
+            <h1 id="dashboard-title">Welcome</h1>
+            <p class="portal-intro">Signed in as <span id="student-email"></span></p>
+            <p class="portal-dashboard-note">Your student dashboard is ready. Student resources will be added here in a future update.</p>
+            <p class="portal-message" id="dashboard-message" role="status" aria-live="polite"></p>
+            <button class="primary-button portal-submit" id="sign-out" type="button">Sign Out</button>
+        </section>
+    </main>
+
+    <p class="portal-loading" id="dashboard-loading" role="status" aria-live="polite">Checking your session...</p>
+
+    <footer class="portal-footer">
+        <p>© 2026 Marigold Performing Arts LLC</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="student-portal.js"></script>
+</body>
+</html>
